@@ -30,8 +30,8 @@ load_dotenv(dotenv_path=PROJECT_ROOT / ".venv")
 # Model Provider Settings (Defaults to 100% Local Ollama)
 # ------------------------------------------------------------------------------
 LLM_PROVIDER: str = os.getenv("LLM_PROVIDER", "ollama").strip().lower()
-LLM_MODEL: str = os.getenv("LLM_MODEL", "llama3.2").strip()
-OLLAMA_BASE_URL: str = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434").strip()
+LLM_MODEL: str = os.getenv("LLM_MODEL", "llama3.2:1b").strip()
+OLLAMA_BASE_URL: str = os.getenv("OLLAMA_BASE_URL", "http://172.27.48.1:11434").strip()
 
 # ------------------------------------------------------------------------------
 # Embedding Engine (Defaults to Local FastEmbed on CPU)
