@@ -24,7 +24,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 # load_dotenv() searches for a .env file in the current working directory or parents.
 # If .env does not exist, it fails silently, allowing system environment variables
 # (such as those injected by Docker Compose or Kubernetes) to take precedence.
-load_dotenv(dotenv_path=PROJECT_ROOT / ".env")
+load_dotenv(dotenv_path=PROJECT_ROOT / ".venv")
 
 # ------------------------------------------------------------------------------
 # Model Provider Settings (Defaults to 100% Local Ollama)
